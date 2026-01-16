@@ -1,5 +1,10 @@
+import Hero from "@/widgets/Hero"
+import AboutDestination from "@/widgets/AboutDestination"
+
+
 export default () => {
-  return (
-    <>Hello world</>
-  );
+  return <>
+    <Hero/>
+    <AboutDestination/>
+  </> 
 }

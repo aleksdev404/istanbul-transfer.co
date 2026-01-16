@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "./src/app"
+		},
+		{
+			"path": "./src/widgets"
 		}
 	],
 	"settings": {}
