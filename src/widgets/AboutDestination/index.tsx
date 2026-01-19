@@ -4,22 +4,20 @@ import c from 'classnames'
 
 import Step1 from './Step1'
 import Step2 from './Step2'
+import Step3 from './Step3'
 
 
 export default () => {
-    const [step, setStep] = useState(2)
+    const [step, setStep] = useState(3)
 
     return <div
         className="hero bg-base-200 min-h-screen"
     >
         <div className="container p-4 md:p-6 lg:p-8">
-            <div className="card card-side bg-base-100 max-w-300 h-[450px] mx-auto">
-                {
-                    step == 1 && <Step1 setStep={setStep}/>
-                }
-                {
-                    step == 2 && <Step2 setStep={setStep}/>
-                }
+            <div className="card card-side bg-base-100 max-w-300 h-[475px] mx-auto">
+                { step == 1 && <Step1 setStep={setStep}/> }
+                { step == 2 && <Step2 setStep={setStep}/> }
+                { step == 3 && <Step3 setStep={setStep}/> }
                 <figure className="w-1/2 relative">
                     <div className="absolute top-0 right-0 w-auto p-5">
                         <span className="badge badge-soft badge-neutral">
