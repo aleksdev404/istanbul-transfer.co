@@ -37,8 +37,15 @@ export default () => {
           <div className="card bg-base-100">
             <div className="card-body">
               <div className="grid grid-cols-5 gap-4">
-                <input type="text" placeholder="From" className="input" defaultValue="Istanbul International Airport (IST)" />
-                <input type="text" placeholder="Where" className="input" defaultValue="Taksim square"/>
+                <input type="text" placeholder="From" className="input" defaultValue="Istanbul International Airport (IST)"  list="from-data"/>
+                <datalist id="from-data">
+                  <option value="Chocolate"></option>
+                  <option value="Coconut"></option>
+                  <option value="Mint"></option>
+                  <option value="Strawberry"></option>
+                  <option value="Vanilla"></option>
+                </datalist>
+                <input type="text" placeholder="Where" className="input" defaultValue="Taksim square" />
                 <input type="text" className="input pika-single" defaultValue="Pick a date" ref={inputRef} />
                 <div className="join">
                   <input type="number" className="input join-item" placeholder="Adult" />
