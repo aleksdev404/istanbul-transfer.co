@@ -11,11 +11,17 @@ export default (props: Props) => (
             <p>Private transfer</p>
         </div>
         <div className="grid grid-cols-2 gap-4 my-10">
+        {
+                [
+                    "Meet & greet inside the airport",
+                    "Flight delay? We wait",
+                ].map((included, index) =>
+                    <p key={index} className="text-[1rem] font-bold"><span className="text-success" key={index}>✔</span>&nbsp;{included}</p>
+                )
+            }
             {
                 [
-                    "Flight delay? We wait",
                     "Free cancellation up to 24h",
-                    "Meet & greet inside the airport",
                     "Fixed price · up to 4 passengers",
                     "24/7 support via WhatsApp",
                     "Help with luggage included"

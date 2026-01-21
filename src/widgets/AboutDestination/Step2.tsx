@@ -50,6 +50,10 @@ export default (props: Props) => {
                     <input type="text" className="input input-sm" placeholder="ex. Alex" />
                 </fieldset>
                 <fieldset className="fieldset !px-0">
+                    <legend className="fieldset-legend mb-1">Hotel</legend>
+                    <input type="text" className="input input-sm" placeholder="ex. Radisson Blue" />
+                </fieldset>
+                <fieldset className="fieldset !px-0">
                     <legend className="fieldset-legend mb-1">Pick-up date (arrival date)</legend>
                     <input type="text" className="input pika-single input-sm" defaultValue="Pick a date" ref={inputRef} />
                 </fieldset>
@@ -69,7 +73,7 @@ export default (props: Props) => {
         </div>
         <div className="card-actions justify-end mt-3">
             <button className="btn btn-ghost link" onClick={() => props.setStep(1)}>Back to details</button>
-            <button className="btn btn-success" onClick={() => props.setStep(3)}>Proceed to secure payment (50€)</button>
+            <button className="btn btn-success" onClick={() => props.setStep(3)}>Continue to confirm</button>
         </div>
     </div>
 }

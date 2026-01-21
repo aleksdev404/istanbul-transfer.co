@@ -33,7 +33,7 @@ export default () => {
                     <ul className="steps">
                         <li className={c('step', step >= 1 && 'step-success')}>Trip</li>
                         <li className={c('step', step >= 2 && 'step-success')}>Passenger</li>
-                        <li className={c('step', step >= 3 && 'step-success')}>Payment</li>
+                        <li className={c('step', step >= 3 && 'step-success')}>Confirm</li>
                         <li className={c('step', step >= 4 && 'step-success')}>Instructions</li>
                     </ul>
                 </div>
