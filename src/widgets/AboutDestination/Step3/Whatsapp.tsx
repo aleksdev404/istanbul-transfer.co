@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import wa from './img/step-3-wa-white.svg'
+import wa from './img/wa-white.svg'
 
 export default () => {
     return <>

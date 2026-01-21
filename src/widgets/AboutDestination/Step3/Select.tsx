@@ -1,8 +1,8 @@
 import Image from "next/image"
 
-import wa from './img/step-3-wa.svg'
-import visa from './img/step-3-visa.svg'
-import mastercard from './img/step-3-mc.svg'
+import wa from './img/wa.svg'
+import visa from './img/visa.svg'
+import mastercard from './img/mc.svg'
 
 
 interface Props
