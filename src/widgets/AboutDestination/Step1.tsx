@@ -5,7 +5,7 @@ interface Props
 
 
 export default (props: Props) => (
-    <div className="card-body flex flex-col justify-between w-1/2">
+    <div className="card-body flex flex-col justify-between h-full">
         <div>
             <h2 className="card-title text-2xl">Istanbul Airport (IST) → Taksim Square</h2>
             <p>Private transfer</p>

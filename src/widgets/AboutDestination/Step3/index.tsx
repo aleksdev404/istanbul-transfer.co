@@ -12,7 +12,7 @@ export default (props: Props) => {
 
     const [method, setMethod] = useState("whatsapp")
 
-    return <div className="card-body w-1/2 flex flex-col justify-between">
+    return <div className="card-body flex flex-col justify-between h-full">
         <div className="flex flex-col gap-6 h-full">
             <div>
                 <a href='#' className="flex items-center gap-2 link">

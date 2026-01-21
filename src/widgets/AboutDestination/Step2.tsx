@@ -31,7 +31,7 @@ export default (props: Props) => {
         };
     }, []);
 
-    return <div className="card-body w-1/2 flex flex-col justify-between">
+    return <div className="card-body flex flex-col justify-between h-full">
         <div>
             <div className="mb-6">
                 <a href='#' className="flex items-center gap-2 link">
