@@ -17,18 +17,18 @@ export default () => {
         <div className="container p-4 md:p-6 lg:p-8">
             <div className="card card-side bg-base-100 max-w-300 h-[475px] mx-auto">
                 <AnimatePresence mode="wait" initial={false}>
-                <motion.div
-                    key={step}
-                    initial={{ opacity: 0, y: 6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -6 }}
-                    transition={{ duration: 0.18, ease: "easeOut" }}
-                    className="w-1/2"
-                >
-                    { step == 1 && <Step1 setStep={setStep}/> }
-                    { step == 2 && <Step2 setStep={setStep}/> }
-                    { step == 3 && <Step3 setStep={setStep}/> }
-                </motion.div>
+                    <motion.div
+                        key={step}
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.18, ease: "easeOut" }}
+                        className="w-1/2"
+                    >
+                        {step == 1 && <Step1 setStep={setStep} />}
+                        {step == 2 && <Step2 setStep={setStep} />}
+                        {step == 3 && <Step3 setStep={setStep} />}
+                    </motion.div>
                 </AnimatePresence>
                 <figure className="w-1/2 relative">
                     <div className="absolute top-0 right-0 w-auto p-5">
