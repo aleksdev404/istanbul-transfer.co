@@ -5,7 +5,7 @@ import AboutDestination from "@/widgets/AboutDestination"
 export default () => {
 
   return <>
-    <Hero/>
+    {/* <Hero/> */}
     <AboutDestination/>
   </> 
 }

@@ -44,29 +44,29 @@ export default (props: Props) => {
                 <h2 className="card-title text-2xl">Passenger details</h2>
                 <p>Required to confirm pickup and airport access</p>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
                 <fieldset className="fieldset !px-0">
                     <legend className="fieldset-legend mb-1">Your full name</legend>
-                    <input type="text" className="input input-sm" placeholder="ex. Alex" />
+                    <input type="text" className="input sm:input-sm" placeholder="ex. Alex" />
                 </fieldset>
                 <fieldset className="fieldset !px-0">
                     <legend className="fieldset-legend mb-1">Hotel</legend>
-                    <input type="text" className="input input-sm" placeholder="ex. Radisson Blue" />
+                    <input type="text" className="input sm:input-sm" placeholder="ex. Radisson Blue" />
                 </fieldset>
                 <fieldset className="fieldset !px-0">
                     <legend className="fieldset-legend mb-1">Pick-up date (arrival date)</legend>
-                    <input type="text" className="input pika-single input-sm" defaultValue="Pick a date" ref={inputRef} />
+                    <input type="text" className="input pika-single sm:input-sm" defaultValue="Pick a date" ref={inputRef} />
                 </fieldset>
                 <fieldset className="fieldset !px-0">
                     <legend className="fieldset-legend mb-1">Flight code</legend>
-                    <input type="text" placeholder="ex. TK1207" className="input input-sm" />
+                    <input type="text" placeholder="ex. TK1207" className="input sm:input-sm" />
                     <p className="label">Used to track delays and adjust pickup time</p>
                 </fieldset>
                 <fieldset className="fieldset !px-0">
                     <legend className="fieldset-legend mb-1">Passengers</legend>
                     <div className="join">
-                        <input type="number" className="input input-sm join-item" placeholder="Adult" />
-                        <input type="number" className="input input-sm join-item" placeholder="Child" />
+                        <input type="number" className="input sm:input-sm join-item" placeholder="Adult" />
+                        <input type="number" className="input sm:input-sm join-item" placeholder="Child" />
                     </div>
                 </fieldset>
             </div>
