@@ -15,7 +15,7 @@ export default () => {
 
     return <>
         <div className="bg-blue-50 rounded-xl py-5">
-            <ul className="timeline justify-center">
+            <ul className="timeline max-sm:timeline-vertical justify-center">
                 {
                     (Object.keys(timelineData) as TimelineKey[]).map((tab, index) =>
                         <li key={index} className="gap-2">

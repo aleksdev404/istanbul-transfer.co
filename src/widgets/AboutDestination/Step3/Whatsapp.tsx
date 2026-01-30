@@ -4,10 +4,10 @@ import wa from './img/wa-white.svg'
 
 export default () => {
     return <>
-        <button className="btn btn-neutral">
+        <a className="!btn !btn-neutral" href='/instructions'>
             <Image src={wa} alt="crypto" height={24} />
             Go to WhatsApp
-        </button>
+        </a>
         <div className="divider">THEN</div>
         <button className="btn" disabled>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
