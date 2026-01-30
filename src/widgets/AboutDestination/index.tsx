@@ -9,13 +9,13 @@ import Step3 from './Step3'
 
 
 export default () => {
-    const [step, setStep] = useState(2)
+    const [step, setStep] = useState(1)
 
     return <div
         className="hero bg-base-200 min-h-screen"
     >
         <div className="container p-4 flex flex-col md:p-6 lg:p-8 max-xl:max-w-full max-sm:h-full">
-            <div className="card card-side bg-base-100 max-sm:w-full h-[475px] max-sm:flex-1 mx-auto">
+            <div className="card card-side bg-base-100 max-w-[600px] lg:max-w-[1200px] w-full h-[475px] max-sm:flex-1 mx-auto">
                 <AnimatePresence mode="wait" initial={false}>
                     <motion.div
                         key={step}
