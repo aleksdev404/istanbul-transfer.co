@@ -17,7 +17,8 @@ const eslintConfig = defineConfig([
     rules: {
       "react/display-name": "off",
       "import/no-anonymous-default-export": "off",
-      "@next/next/no-img-element": "off"
+      "@next/next/no-img-element": "off",
+      "@typescript-eslint/no-require-imports": "off"
     },
   },
 ]);
