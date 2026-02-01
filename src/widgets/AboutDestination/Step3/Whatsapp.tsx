@@ -1,13 +1,14 @@
+import Link from 'next/link'
 import Image from 'next/image'
 
 import wa from './img/wa-white.svg'
 
 export default () => {
     return <>
-        <a className="!btn !btn-neutral" href='/instructions'>
+        <Link className="!btn !btn-neutral" href='/instructions'>
             <Image src={wa} alt="crypto" height={24} />
             Go to WhatsApp
-        </a>
+        </Link>
         <div className="divider">THEN</div>
         <button className="btn" disabled>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -17,7 +18,6 @@ export default () => {
         </button>
         <p className='text-center'>
             Available after WhatsApp confirmation
-            {/* Use this after you’ve confirmed the booking on WhatsApp */}
         </p>
     </>
 }
