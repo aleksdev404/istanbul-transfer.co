@@ -1,31 +1,6 @@
-'use client'
-import { useEffect, useRef } from "react"
-
 import data from './data'
 
-
 export default () => {
-
-    const inputRef = useRef<HTMLInputElement | null>(null);
-
-    useEffect(() => {
-        let picker: import('pikaday') | null
-
-        (async () => {
-            const Pikaday = (await import("pikaday")).default;
-
-            if (!inputRef.current) return;
-
-            picker = new Pikaday({
-                field: inputRef.current,
-                format: "YYYY-MM-DD",
-            });
-        })();
-
-        return () => {
-            picker?.destroy?.();
-        };
-    }, []);
 
     return (
         <div
@@ -34,11 +9,11 @@ export default () => {
             <div
                 className="hero-content"
             >
-                <div className="grid gap-3 grid-cols-2 sm:grid-cols-2 xl:grid-cols-4">
+                <div className="grid gap-3 sm:gap-5 grid-cols-2 sm:grid-cols-2 xl:grid-cols-4">
                     {
                         data.map((fact, index) =>
                             <div key={index} className="stats bg-white">
-                                <div className="stat">
+                                <div className="stat sm:p-10">
                                     <div className="stat-figure text-success hidden sm:block">
                                         {fact.icon}
                                     </div>

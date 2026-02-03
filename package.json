@@ -22,7 +22,8 @@
     "normalize.css": "^8.0.1",
     "pikaday": "^1.8.2",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "sass": "^1.97.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",

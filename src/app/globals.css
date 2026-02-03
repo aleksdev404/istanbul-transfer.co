@@ -1,7 +1,7 @@
 /* @import "normalize.css"; */
 
 * {
-    /* outline: 1px dashed rgba(0, 0, 0, 0.1); */
+    outline: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
 @import "tailwindcss";
