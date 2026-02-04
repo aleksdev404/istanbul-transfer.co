@@ -45,9 +45,9 @@ export default [
         ),
     },
     {
-        title: "Driver waits inside terminal",
-        value: "Easy pickup",
-        desc: "Escort to car",
+        title: "Hotel or exact address",
+        value: "1:1 transfer",
+        desc: "No shared rides",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-8">
                 <path
