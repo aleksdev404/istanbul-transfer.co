@@ -12,7 +12,7 @@ export default () => {
                 <div className="grid gap-3 sm:gap-5 grid-cols-2 sm:grid-cols-2 xl:grid-cols-4">
                     {
                         data.map((fact, index) =>
-                            <div key={index} className="stats bg-white">
+                            <div key={index} className="stats bg-white border border-blue-100">
                                 <div className="stat sm:p-10">
                                     <div className="stat-figure text-success hidden sm:block">
                                         {fact.icon}

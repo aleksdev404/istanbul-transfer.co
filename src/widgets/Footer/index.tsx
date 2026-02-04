@@ -10,6 +10,7 @@ export default () => {
         <div className="hero-content text-center w-full">
             <Link className="link" href="#">Terms of Service</Link>
             <Link className="link" href="#">Privacy policy</Link>
+            <Link className="link" href="#">Customer support</Link>
         </div>
       </div>
     );

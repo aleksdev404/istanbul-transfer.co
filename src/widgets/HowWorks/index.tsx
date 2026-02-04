@@ -40,7 +40,7 @@ export default () => {
                                         style={{ aspectRatio: '1 / 1', height: '2.3rem' }}
                                     >{index + 1}</div>
                                 </div>
-                                <div className="ml-5 p-5 timeline-end timeline-box text-xl border-0 shadow-none my-2">
+                                <div className="ml-5 p-10 timeline-end timeline-box text-xl border border-blue-100">
                                     <p>
                                         <b>{data[key].title}</b>
                                     </p>

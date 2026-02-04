@@ -1,4 +1,11 @@
+'use client'
+
+import { useState } from "react";
+import c from 'classnames'
+
+
 export default () => {
+    const [showRoutes, setShowRoutes] = useState(false)
 
     return (
         <div
@@ -10,8 +17,15 @@ export default () => {
                 <h2 className="text-2xl sm:text-5xl text-start sm:text-center font-bold mb-10">Popular routes</h2>
                 <div className="grid gap-3 sm:gap-5 grid-cols-1 sm:grid-cols-2 xl:grid-cols-2">
                     {
-                        Array.from(Array(9)).map((_, index) =>
-                            <a key={index} href='#' className="card bg-white">
+                        Array.from(Array(10)).map((_, index) =>
+                            <a
+                                key={index}
+                                href='#'
+                                className={c(
+                                    "card bg-white border border-blue-100",
+                                    index > 3 && !showRoutes && "max-sm:hidden"
+                                )}
+                            >
                                 <div className="card-body">
                                     <div className="flex gap-5">
                                         <div className="flex gap-3 items-center">
@@ -32,6 +46,14 @@ export default () => {
                             </a>
                         )
                     }
+                    <div
+                        className="btn sm:hidden"
+                        onClick={() => setShowRoutes(!showRoutes)}
+                    >
+                        {
+                            showRoutes ? "Show less routes" : "Show all routes"
+                        }
+                    </div>
                 </div>
             </div>
         </div>
